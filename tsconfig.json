@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "target": "es2020", //コンパイルしたいJavaScriptバージョン
+    "module": "commonjs", //モジュールの読み込み方法を指定する [バックエンド(require)]:"commonjs" [フロントエンド(import)]:"esnext"
+    "lib": ["es2020"], //参照する型定義 [バックエンド]:"es2020" [フロントエンド]:["es2020", "dom"]
+    "jsx": "react", //.tsxファイルの変換方法 [フロントエンド]:"react"
+    "sourceMap": true, //ソースマップファイルの生成を有効化する
+    "outDir": "./dist", //.jsファイルの出力先パス
+    "rootDir": "./src", //型定義ファイルでない入力ファイルの共通パス
+    "strict": true, //厳密な型チェックを行う
+    "baseUrl": "src", //相対パスの起点となるディレクトリを指定
+    "esModuleInterop": true, //インポート相互運用のコードを出力を行う
+    "experimentalDecorators": true, //デコレータの実験的なサポートを有効にする
+    "emitDecoratorMetadata": true, //デコレータのメタ情報を出力する
+    "skipLibCheck": true, //型定義ファイルのチェックをスキップ
+    "forceConsistentCasingInFileNames": true //ファイル名の大文字小文字を区別する
+  },
+  "include": ["src/**/*"], //プログラムに含めるファイルのパス
+  "exclude": ["dist", "node_modules"] //プログラムから除外するファイルのパス
+}

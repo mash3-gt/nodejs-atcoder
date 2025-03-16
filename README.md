@@ -3,12 +3,9 @@
 ## Setup memo
 
 * Environment
-  * Win
-    * install scoop
-    * install nodejs20 with scoop
-  * Mac
-    * install nvm
-    * install nodejs20 with nvm
+  * OS: Win
+  * Package Manager: scoop
+  * Framework: nodejs20 (installed with scoop)
 
 * How to use
   * JavaScript

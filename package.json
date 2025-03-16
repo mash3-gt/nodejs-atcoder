@@ -4,11 +4,11 @@
   "description": "atcoder stock with node.js",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "tsnode": "ts-node src/test.ts"
+    "hello-js": "node src/hello.js",
+    "hello-ts": "ts-node src/hello.ts"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "mashgt",
+  "license": "MIT",
   "devDependencies": {
     "@types/node": "^22.13.10",
     "ts-node": "^10.9.2",

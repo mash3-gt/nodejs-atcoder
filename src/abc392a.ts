@@ -1,7 +1,5 @@
 // https://atcoder.jp/contests/abc394/tasks/abc392_a
 
-// the number of input lines
-
 const abc392a = (input: string) => {
     const lines = input.trim().split("\n");
     const alist = lines[0].split(" ").map(Number);
@@ -17,12 +15,13 @@ const abc392a = (input: string) => {
 // Don't edit below this line
 process.stdin.setEncoding("utf8");
 
-let inputLines: string[] = [];
+(globalThis as any).inputLines = []; // グローバルスコープに明示的に紐づける
+
 process.stdin.on("data", (chunk) => {
     const line_num = 1; // change according to the question
-    inputLines.push(...chunk.toString().trim().split("\n"));
-    if (inputLines.length >= line_num) {
+    (globalThis as any).inputLines.push(...chunk.toString().trim().split("\n"));
+    if ((globalThis as any).inputLines.length >= line_num) {
         process.stdin.pause();
-        abc392a(inputLines.join("\n"));
+        abc392a((globalThis as any).inputLines.join("\n"));
     }
 });

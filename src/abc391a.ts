@@ -25,9 +25,9 @@ const abc391a = (input: string) => {
 // Don't edit below this line
 process.stdin.setEncoding("utf8");
 
+let inputLines: string[] = [];
 process.stdin.on("data", (chunk) => {
     const line_num = 1; // change according to the question
-    let inputLines: string[] = [];
     inputLines.push(...chunk.toString().trim().split("\n"));
     if (inputLines.length >= line_num) {
         process.stdin.pause();
